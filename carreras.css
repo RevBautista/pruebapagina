@@ -1,0 +1,172 @@
+/* ----------------------------- Estilos personalizados ----------------------------- */
+.navbar {
+    background-color: #107e10; /* Color base del navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px; /* Tamaño uniforme para el logo */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Redondear el logo */
+    border: 2px solid #fff; /* Borde blanco */
+    margin-right: 10px; /* Espaciado derecho */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Efecto hover para el logo */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important; /* Color blanco para texto */
+    font-weight: 500; /* Peso de fuente */
+}
+
+.nav-link:hover {
+    color: #c1e1c1 !important; /* Color de hover para enlaces */
+}
+
+/* Pie de página */
+footer {
+    background-color: #107e10;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ----------------------------- Estilos personalizados ----------------------------- */
+
+/* ----------------------------- Sección de bienvenida ----------------------------- */
+.welcome-section {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #f5f6f7;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #40a143;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    color: #107e10;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 1.25rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ----------------------------- Sección de Carreras ----------------------------- */
+.courses {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 2.5rem auto;
+    border-bottom: 2px solid #40a143;
+}
+
+.courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #40a143;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ----------------------------- Sección individual de cada carrera ----------------------------- */
+.carrera-section {
+    background-color: #fff;
+    padding: 2.5rem;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.carrera-section:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.carrera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carrera img {
+    width: 220px; /* Tamaño más grande para la imagen */
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Aumenta el radio para mayor suavidad */
+}
+
+.carrera div {
+    text-align: left;
+    padding-left: 25px;
+    max-width: 600px;
+}
+
+.carrera h3 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.carrera p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ----------------------------- Ajustes responsive ----------------------------- */
+@media (min-width: 768px) {
+    .carrera {
+        flex-wrap: nowrap;
+    }
+
+    .carrera img {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .carrera div {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .carrera img {
+        margin-bottom: 15px;
+        width: 180px; /* Ajuste de tamaño para pantallas pequeñas */
+        height: 180px;
+    }
+
+    .courses h2 {
+        font-size: 2rem;
+    }
+}

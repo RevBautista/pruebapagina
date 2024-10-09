@@ -1,0 +1,133 @@
+/* ----------------------------- Estilos personalizados ----------------------------- */
+nav.navbar {
+    background-color: #107e10 !important; /* Color base del navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px; /* Tamaño uniforme para el logo */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Redondear el logo */
+    border: 2px solid #fff; /* Borde blanco */
+    margin-right: 10px; /* Espaciado derecho */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Efecto hover para el logo */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important; /* Color blanco para texto */
+    font-weight: 500; /* Peso de fuente */
+}
+
+.nav-link:hover {
+    color: #c1e1c1 !important; /* Color de hover para enlaces */
+}
+
+/* Pie de página */
+footer {
+    background-color: #107e10;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ----------------------------- Sección de contacto ----------------------------- */
+header {
+    background-color: #107e10; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 2rem;
+    text-align: center; /* Centrar el texto */
+    border-bottom: 3px solid #40a143; /* Línea inferior */
+}
+
+header h1 {
+    font-size: 3rem; /* Tamaño del título */
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Información de contacto */
+.contact-info {
+    background-color: #f5f6f7; /* Color de fondo */
+    padding: 2rem; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    border: 1px solid #ddd; /* Borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.contact-info h2 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #107e10; /* Color del título */
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1.25rem; /* Tamaño del texto */
+    color: #333;
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 0.5rem;
+}
+
+/* Mapa */
+.map {
+    margin-top: 2rem; /* Espaciado superior */
+    margin-bottom: 4rem; /* Espaciado inferior aumentado */
+    text-align: center;
+}
+
+.map h2 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #107e10; /* Color del título */
+    margin-bottom: 1rem;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px; /* Altura fija para el mapa */
+    border: 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .map iframe {
+        height: 300px; /* Ajustar la altura para pantallas más pequeñas */
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Tamaño del título para pantallas pequeñas */
+    }
+
+    .contact-info h2 {
+        font-size: 1.5rem; /* Tamaño del título para información de contacto */
+    }
+
+    .contact-info li {
+        font-size: 1rem; /* Tamaño del texto para información de contacto */
+    }
+}
